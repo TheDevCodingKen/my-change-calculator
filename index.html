@@ -3,11 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <html lang="en-US">
   </head>
   <body>
-    <!-- Write your markup here -->
-
-    <!-- Don't forget to add your <script> tag here -->
-
+    <h1>Change Calculator</h1>
+    <form action="/my-handling-form-page" method="post">
+      <p>
+        <label for="amount-due">Total Amount Due?</label>
+        <input type="number" step=".01" id="amount-due" class="amount-due">
+      </p>
+      <p>
+        <label for="amount-received">How much has the customer given you?</label>
+        <input type="number" step=".01" id="amount-received" class="amount-received">
+      </p>
+      <p class="button" id="output"></p>
+      <button type="button" id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
+    </form>
+    <section id="Notes">
+      <h2>Twenties</h2>
+      <p id="twenties-output">0</p>
+      <h2>Tens</h2>
+      <p id="tens-output">0</p>
+      <h2>Fives</h2>
+      <p id="fives-output">0</p>
+      <h2>Two</h2>
+      <p id="twos-output">0</p>
+      <h2>Dollars</h2>
+      <p id="dollars-output">0</p>
+    </section>
+    <section id="Coins">
+      <h2>Quarters</h2>
+      <p id="quarters-output">0</p>
+      <h2>Dimes</h2>
+      <p id="dimes-output">0</p>
+      <h2>Nickels</h2>
+      <p id="nickels-output">0</p>
+      <h2>Pennies</h2>
+      <p id="pennies-output">0</p>
+    </section>
   </body>
 </html>
