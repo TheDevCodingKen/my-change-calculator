@@ -1,8 +1,8 @@
 const currency = [
     //United States currency denominations
-    // string, value, count
+    // string, number, count
 ['twenties-output', 20, 0],
-['tens-output', 10, 0], //currency[1]
+['tens-output', 10, 0],
 ['fives-output', 5, 0],
 ['twos-output', 2, 0],
 ['dollars-output', 1, 0],
@@ -16,9 +16,13 @@ const currency = [
 function handleClickEvent(e){
     const amountDue = parseFloat(document.getElementById("amount-due").value);
     const amountReceived = parseFloat(document.getElementById("amount-received").value);
-    // let result = calculateChange(amountDue, amountReceived);
     let change = amountReceived - amountDue;
-    console.log("change:", change)
+    console.log("change:", change);
+    if (change == 0){
+        alert("No change is due.");
+    } else if (change < 0){
+        alert("Hmmm. It seems like the customer should pay more.")
+    }
 
     for (let i = 0; i < currency.length; i++) {
         currency[i][2] = Math.floor(change/currency[i][1]);
@@ -26,5 +30,5 @@ function handleClickEvent(e){
         console.log(change);
         document.getElementById(`${currency[i][0]}`).innerHTML = currency[i][2];
     }
-console.log(currency);
+    console.log('U.S. Currency Denominations & Coins:', currency);
 }
