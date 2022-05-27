@@ -4,54 +4,59 @@
     <meta charset="utf-8">
     <title>Change Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa Slab One">
     <link rel="icon" href="./img/calculator money icon.png" type="image/png">
     <script src="main.js" defer></script>
     <html lang="en-US">
   </head>
   <body>
-    <h1>Change Calculator</h1>
-    <form action="/my-handling-form-page" method="post">
-      <p>
-        <label for="amount-due">Total Amount Due?</label>
-        <input type="number" step=".01" id="amount-due" class="amount-due">
-      </p>
-      <p>
-        <label for="amount-received">How much has the customer given you?</label>
-        <input type="number" step=".01" id="amount-received" class="amount-received">
-      </p>
-      <p class="button" id="output"></p>
-      <button type="button" id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
-    </form>
-    <section id="Notes">
-      <h2>Twenties</h2>
-      <p id="twenties-output">0</p>
-      <img class="twenties-img" src="https://upload.wikimedia.org/wikipedia/commons/7/79/US_%2420_Series_2006_Obverse.jpg" alt="Twenty-Dollar bill">
-      <h2>Tens</h2>
-      <p id="tens-output">0</p>
-      <img class="tens-img" src="https://upload.wikimedia.org/wikipedia/commons/4/49/US10dollarbill-Series_2004A.jpg" alt="Ten-Dollar bill">
-      <h2>Fives</h2>
-      <p id="fives-output">0</p>
-      <img class="fives-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/US_%245_Series_2006_obverse.jpg/1280px-US_%245_Series_2006_obverse.jpg" alt="Five-Dollar bill">
-      <h2>Two</h2>
-      <p id="twos-output">0</p>
-      <img class="twos-img" src="https://upload.wikimedia.org/wikipedia/commons/2/27/US_%242_bill_obverse_series_2003_A.jpg" alt="Two-Dollar bill">
-      <h2>Dollars</h2>
-      <p id="dollars-output">0</p>
-      <img class="dollars-img" src="https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="One-Dollar bill">
-    </section>
-    <section id="Coins">
-      <h2>Quarters</h2>
-      <p id="quarters-output">0</p>
-      <img class="quarter-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/comp1-aligned-v5.gif" alt="Quarter">
-      <h2>Dimes</h2>
-      <p id="dimes-output">0</p>
-      <img class="dime-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/dime-flip-and-reverse-800px.gif" alt="Dime">
-      <h2>Nickels</h2>
-      <p id="nickels-output">0</p>
-      <img class="nickle-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/layers-800px-alignment-v2.gif" alt="Nickel">
-      <h2>Pennies</h2>
-      <p id="pennies-output">0</p>
-      <img class="penny-gif" src="https://www.elephango.com/_userimages/money-pennies-11672-gif1.gif" alt="Penny">
+    <main class="calculator">
+      <h1>Change Calculator</h1>
+      <form>
+        <p>
+          <label for="amount-due">Total Amount Due?</label>
+          <input type="number" step=".01" id="amount-due" class="amount-due">
+        </p>
+        <p>
+          <label for="amount-received">How much has the customer given you?</label>
+          <input type="number" step=".01" id="amount-received" class="amount-received">
+        </p>
+        <p class="button" id="output"></p>
+        <button type="button" id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
+      </form>
+    </main>
+    <section class="uscurrency">
+      <div class="notes">
+        <h2>Twenties</h2>
+        <p id="twenties-output">0</p>
+        <img class="twenties-img" src="https://upload.wikimedia.org/wikipedia/commons/7/79/US_%2420_Series_2006_Obverse.jpg" alt="Twenty-Dollar bill">
+        <h2>Tens</h2>
+        <p id="tens-output">0</p>
+        <img class="tens-img" src="https://upload.wikimedia.org/wikipedia/commons/4/49/US10dollarbill-Series_2004A.jpg" alt="Ten-Dollar bill">
+        <h2>Fives</h2>
+        <p id="fives-output">0</p>
+        <img class="fives-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/US_%245_Series_2006_obverse.jpg/1280px-US_%245_Series_2006_obverse.jpg" alt="Five-Dollar bill">
+        <h2>Two</h2>
+        <p id="twos-output">0</p>
+        <img class="twos-img" src="https://upload.wikimedia.org/wikipedia/commons/2/27/US_%242_bill_obverse_series_2003_A.jpg" alt="Two-Dollar bill">
+        <h2>Dollars</h2>
+        <p id="dollars-output">0</p>
+        <img class="dollars-img" src="https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="One-Dollar bill">
+      </div>
+      <div class="coins">
+        <h2>Quarters</h2>
+        <p id="quarters-output">0</p>
+        <img class="quarter-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/comp1-aligned-v5.gif" alt="Quarter">
+        <h2>Dimes</h2>
+        <p id="dimes-output">0</p>
+        <img class="dime-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/dime-flip-and-reverse-800px.gif" alt="Dime">
+        <h2>Nickels</h2>
+        <p id="nickels-output">0</p>
+        <img class="nickle-gif" src="https://ezvisuals.com/wp-content/uploads/2019/07/layers-800px-alignment-v2.gif" alt="Nickel">
+        <h2>Pennies</h2>
+        <p id="pennies-output">0</p>
+        <img class="penny-gif" src="https://images.milledcdn.com/2017-11-13/el0ZOaepCMfmafrp/_IILezKBTri8.gif" alt="Penny">
+      </div>
     </section>
   </body>
 </html>
