@@ -1,0 +1,46 @@
+html {
+    outline: 10px solid #340D09;
+    background-color: #FCBA12;
+}
+
+body {
+    text-align: center;
+    font-family: Consolas,monaco,monospace;
+}
+
+h1{
+    color: #347B98;
+    font-family: "Alfa Slab One";
+    font-size: 50px;
+}
+
+button {
+    background-color: #D4EDF7;
+}
+
+.uscurrency {
+    outline: 10px solid #347B98;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #D4EDF7;
+}
+
+img {
+    max-height: 100px;
+}
+
+@keyframes flexAnimation {
+    50%  {flex: 1}
+}
+
+.notes {
+    animation: flexAnimation 5s;
+    animation-iteration-count: 1;
+}
+
+.notes p, .coins p {
+    font-size: 20px;
+    margin: 10px;
+}
