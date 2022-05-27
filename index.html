@@ -15,11 +15,11 @@
       <form>
         <p>
           <label for="amount-due">Total Amount Due?</label>
-          <input type="number" step=".01" id="amount-due" class="amount-due">
+          <input type="number" step=".01" id="amount-due" class="amount-due" placeholder="Sales Total">
         </p>
         <p>
           <label for="amount-received">How much has the customer given you?</label>
-          <input type="number" step=".01" id="amount-received" class="amount-received">
+          <input type="number" step=".01" id="amount-received" class="amount-received" placeholder="Payment Amount">
         </p>
         <p class="button" id="output"></p>
         <button type="button" id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
