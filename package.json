@@ -5,7 +5,7 @@
     "keywords": ["change-calculator"],
     "version": "0.1.0",
     "private": true,
-    "repository": {},
+    "repository": "https://github.com/TheDevCodingKen/my-change-calculator",
     "scripts": {
         "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
         "test": "mocha --exit"
